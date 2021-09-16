@@ -24,3 +24,6 @@ import -> preprocess -> segment -> post process -> classify
 3. `min(<img>, [], "all")` - returns min color value in max an image
 4. `[R, G, B] = imsplit(<img>)` - splites the 3d array (RGB array) of that image and stores it in R, G, B variables
 5. `montage ({<R-img>, <G-img>, <B-img>})` - prints montage of all the three images
+
+**Grayscale and color images**
+1. `A = im2gray(<img>);` - converts image to grayscale so that text can be more easily readable in black and white theme.

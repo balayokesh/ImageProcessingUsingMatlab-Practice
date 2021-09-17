@@ -27,3 +27,8 @@ import -> preprocess -> segment -> post process -> classify
 
 **Grayscale and color images**
 1. `A = im2gray(<img>);` - converts image to grayscale so that text can be more easily readable in black and white theme.
+
+**Using histogram to check contrast**
+1. `imhist(<img>)` - shows histogram of contrast/intensity rate in an image
+2. `imadjust(<img>)` - used to increase contrast of greyscale image
+3. `imlocalbrighten(<img>)` - used to icnrease contrast of coloured image

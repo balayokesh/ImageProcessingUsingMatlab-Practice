@@ -60,3 +60,5 @@ Receipt contains more 0 values in its grayscale row.
 `plot(rsum)`
 
 ## Post processing:
+**Filtering noise**  
+`H = fspecial("average", n)` - creates n by n averaging filter with name H

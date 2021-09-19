@@ -35,3 +35,19 @@ import -> preprocess -> segment -> post process -> classify
 
 **Open matlab tool**
 1. `imtool` - opens matlab interactive GUI tool
+
+## Image segmenting
+Definition: Segmenting various objects in an image by edge detection, texture, specific shapes and sizes and color
+
+
+**Adjusting image threshold example:**  
+**Step 1:**   
+Convert to grayscale  
+**Step 2:**   
+Increase contrast `imgAdj = imgadjust(<img>)`    
+**Step3:**  
+1. `BW = imgAdj > 255/2`  
+2. `BW = imgAdj > 200`  
+(or)  
+use `imbinarize(<img>);`  
+**Eg:** `imbinarize(gsAdj, "adaptive", "ForegroundPolarity", "dark");`

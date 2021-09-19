@@ -32,3 +32,6 @@ import -> preprocess -> segment -> post process -> classify
 1. `imhist(<img>)` - shows histogram of contrast/intensity rate in an image
 2. `imadjust(<img>)` - used to increase contrast of greyscale image
 3. `imlocalbrighten(<img>)` - used to icnrease contrast of coloured image
+
+**Open matlab tool**
+1. `imtool` - opens matlab interactive GUI tool

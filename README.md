@@ -51,3 +51,12 @@ Increase contrast `imgAdj = imgadjust(<img>)`
 (or)  
 use `imbinarize(<img>);`  
 **Eg:** `imbinarize(gsAdj, "adaptive", "ForegroundPolarity", "dark");`
+
+### Finding whether a image is a receipt or not
+Receipt contains more 0 values in its grayscale row.  
+**To calculate row sum**  
+`rsum = sum(<img>, 2)`  
+**To plot the image row addition values**  
+`plot(rsum)`
+
+## Post processing:

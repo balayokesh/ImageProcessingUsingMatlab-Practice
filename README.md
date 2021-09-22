@@ -62,10 +62,10 @@ Receipt contains more 0 values in its grayscale row.
 ## Post processing:
 **Filtering noise**  
 `H = fspecial("average", n)` - creates n by n averaging filter with name H  
-**Seperate background:**
+**Seperate background:**  
 Closing the image will emphasize and connect the brighter background, removing the thin dark lettering - `SE = strel("disk",8);`  
 Isolating background - `Ibg = imclose(gs,SE);`
 
-**Remove Ibg (background) from image by subtracting**
-gsSub = Ibg - gs
+**Remove Ibg (background) from image by subtracting**  
+`gsSub = Ibg - gs`
 

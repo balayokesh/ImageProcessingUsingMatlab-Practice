@@ -67,5 +67,13 @@ Closing the image will emphasize and connect the brighter background, removing t
 Isolating background - `Ibg = imclose(gs,SE);`
 
 **Remove Ibg (background) from image by subtracting**  
-`gsSub = Ibg - gs`
+`gsSub = Ibg - gs`  
 
+**Finding local minima in a signal**    
+Go to `task -> Find local extrema`  
+
+`nnz(<array>)` - returns number of non zero numbers in the array  
+
+**reading and classifying images**  
+`imageDatastore('<folder_path>')` - Used for referencing to bulk images  
+`readimage(<referenced_folder_variable>, n)` - get nth image from the folder path  
